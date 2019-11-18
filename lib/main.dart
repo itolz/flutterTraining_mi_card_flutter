@@ -14,6 +14,7 @@ class MyApp extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.center,
             children: <Widget>[
+              SizedBox(height: 10.0,),
               CircleAvatar(
                 radius: 50.0,
                 backgroundImage: AssetImage('images/itolz.jpg'),
@@ -36,22 +37,47 @@ class MyApp extends StatelessWidget {
                     fontWeight: FontWeight.bold),
               ),
               Container(
-                padding: EdgeInsets.all(10.0),
-                color:  Colors.white,
-                margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 25.0),
+                  padding: EdgeInsets.all(10.0),
+                  
+                  color: Colors.white,
+                  margin:
+                      EdgeInsets.symmetric(vertical: 10.0, horizontal: 25.0),
                   child: Row(
-                children: <Widget>[
-                  Icon(Icons.phone, color: Colors.teal),
-                  SizedBox(width: 10.0,),
-                  Text(
-                    '+55 13 99127 3352',
-                    style: TextStyle(
-                        color: Colors.teal.shade900,
+                    children: <Widget>[
+                      Icon(Icons.phone, color: Colors.teal),
+                      SizedBox(
+                        width: 10.0,
+                      ),
+                      Text(
+                        '+55 13 99127 3352',
+                        style: TextStyle(
+                            color: Colors.teal.shade900,
+                            fontFamily: 'Source Sans Pro',
+                            fontSize: 20.0),
+                      )
+                    ],
+                  )),
+              Container(
+                color: Colors.white,
+                margin: EdgeInsets.symmetric(vertical: 10.0, horizontal:  25.0),
+                padding: EdgeInsets.all(10.0),
+                child: Row(
+                  children: <Widget>[
+                    Icon(Icons.email, color: Colors.teal),
+                    SizedBox(
+                      width: 10.0,
+                    ),
+                    Text(
+                      'italo.farias@gmail.com',
+                      style: TextStyle(
+                        fontSize: 20.0,
                         fontFamily: 'Source Sans Pro',
-                        fontSize: 20.0),
-                  )
-                ],
-              ))
+                        color: Colors.teal.shade900,
+                      ),
+                    )
+                  ],
+                ),
+              )
             ],
           ),
         ),
