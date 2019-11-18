@@ -29,13 +29,18 @@ class MyApp extends StatelessWidget {
               Text(
                 'Engenheiro de Sistemas',
                 style: TextStyle(
-                  fontFamily: 'Source Sans Pro',
-                  fontSize: 20.0,
-                  color: Colors.white,
-                  letterSpacing: 2.5,
-                  fontWeight: FontWeight.bold
-                ),
+                    fontFamily: 'Source Sans Pro',
+                    fontSize: 20.0,
+                    color: Colors.white,
+                    letterSpacing: 2.5,
+                    fontWeight: FontWeight.bold),
               ),
+              Container(
+                  child: Row(
+                children: <Widget>[
+                  Icon(Icons.add_shopping_cart, size: 80.0, color: Colors.teal.shade300),
+                ],
+              ))
             ],
           ),
         ),
