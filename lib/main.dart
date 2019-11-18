@@ -36,9 +36,20 @@ class MyApp extends StatelessWidget {
                     fontWeight: FontWeight.bold),
               ),
               Container(
+                padding: EdgeInsets.all(10.0),
+                color:  Colors.white,
+                margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 25.0),
                   child: Row(
                 children: <Widget>[
-                  Icon(Icons.add_shopping_cart, size: 80.0, color: Colors.teal.shade300),
+                  Icon(Icons.phone, color: Colors.teal),
+                  SizedBox(width: 10.0,),
+                  Text(
+                    '+55 13 99127 3352',
+                    style: TextStyle(
+                        color: Colors.teal.shade900,
+                        fontFamily: 'Source Sans Pro',
+                        fontSize: 20.0),
+                  )
                 ],
               ))
             ],
